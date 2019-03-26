@@ -12,19 +12,19 @@
 <body> 
 	<center><H1> CALCULATOR v. 0.2 </H1><BR>
 
-	Podaj liczbę:<input id="liczba1" type="number" >  </input><br><br>
-	Podaj liczbę:<input id="liczba2" type="number" >  </input><br><br>
+	Enter first number:<input id="num1" type="number" >  </input><br><br>
+	Enter second number:<input id="num2" type="number" >  </input><br><br>
 	
-		<legend>Wybierz działanie:</legend>
+		<legend>... and choose action</legend>
 		<input type="radio"  name="radio" > + <br>
 		<input type="radio"  name="radio" > - <br>
 		<input type="radio"  name="radio" > x <br>
 		<input type="radio"  name="radio" > : <br> <br>
 
-	 <input type="submit" onclick="licz()" value=" OBLICZ "> </input> <br>
+	 <input type="submit" onclick="count()" value=" GO ! "> </input> <br>
 	 
-	 <h3><label>Wynik działania to: <output type="number" name="wynik" ></label></h3> 
-	<H2><div id="wynik2"></div></H2>
+	 <h3><label>Abracadabra! your result is <output type="number" name="total" ></label></h3> 
+	<H2><div id="result"></div></H2>
 
 </center>
 </body>

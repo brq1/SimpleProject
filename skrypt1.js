@@ -1,9 +1,9 @@
 
-function licz()
+function count()
 {
 
-var liczba1 = document.getElementById("liczba1").value;
-var liczba2 = document.getElementById("liczba2").value;
+var nr1 = document.getElementById("num1").value;
+var nr2 = document.getElementById("num2").value;
 
 
 var f = document.getElementsByName("radio");
@@ -17,23 +17,23 @@ for(var i = 0; i < 4; i++)
     };
 switch (v){
         case 1: 
-            wynik = (liczba1*1 + liczba2*1);
+            total = (nr1*1 + nr2*1);
             break;
         case 2:
-            wynik = liczba1 - liczba2;
+            total = nr1 - nr2;
             break;
         case 3:
-            wynik = liczba1 * liczba2;
+            total = nr1 * nr2;
             break;
         case 4:
-            if (liczba2==0) {
-            wynik = "Nie dziel selero przez zero :)"}
+            if (nr2==0) {
+            total = "You can not divide by zero!"}
             else  { 
-             wynik = liczba1 / liczba2;
+             total = nr1 / nr2;
             break;} 
         }
         
 
 
-document.getElementById("wynik2").innerHTML=(wynik);
+document.getElementById("result").innerHTML=(total);
 }
